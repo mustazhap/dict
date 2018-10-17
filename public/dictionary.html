@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+	<title>Arabic Dictionary</title>
+
+</head>
+<body>
+	
+<header class="header page">
+	<div class="header__wrapper page-wrapper">
+		<a href="/" class="header__logo">
+			<span class="header__logo-text">Logo</span>
+			<span class="header__logo-title">Русско-Арабский<br>
+онлайн словарь</span>
+		</a>
+		<div class="header__part">
+			<nav class="header__nav">
+				<a href="#">О проекте</a>
+				<a href="/dict/dictionary.html">Все слова</a>
+				<a href="#">Правки</a>
+				<a href="#">События</a>
+			</nav>
+			<div class="header__control">
+				<a href="#!" class="header__control-link" id="login-button">Мое избранное</a>
+				<button class="button" id="add-button">+ Добавить слово</button>
+			</div>
+		</div>
+		 <a href="javascript:void(0);" class="header__menu-button" onclick="menu()">
+    		<i class="icon-lines-menu"></i>
+    	</a>
+    	<div class="header__menu" id="mobileMenu">
+    		<nav class="header__menu-nav">
+				<a href="#">О проекте</a>
+				<a href="/dictionary.html">Все слова</a>
+				<a href="#">Правки</a>
+				<a href="#">События</a>
+			</nav>
+
+			<div class="header__menu-control">
+				
+				<button class="button button_white" id="add-buttonMobile">+ Добавить слово</button>
+				<a href="#!" class="header__menu-control-link" id="login-buttonMobile">Мое избранное</a>
+			</div>
+    		
+    	</div>
+		
+	</div>
+</header>
+<section class="dictionary-top page">
+	<div class="dictionary-top__wrapper page-wrapper">
+		<span class="dictionary-top__title">Все слова</span>
+		<a href="#!" class="dictionary-top__category">Все категории</a>
+	</div>
+</section>
+
+<section class="dictionary page">
+	<div class="dictionary__wrapper page-wrapper">
+		<div class="dictionary__row">
+			<div class="dictionary__column">
+				<div class="word">
+					<div class="word__text">
+						<span> ا  (أَلِفٌ)</span>
+						<a href="#!" class="word__transcription">Транскрипция</a>
+					</div>
+					<div class="word__descr">
+						<span>Алиф; (первая буква арабского алфавита; служит знаком долготы для фатхи или является носителем хамзы; (цифровое значение 1)</span>
+					</div>
+					<div class="word__actions">
+						<a href="#!">Редактировать</a>
+						<a href="#!">Правки ( 1 )</a>
+					</div>
+				</div>
+			</div>
+			<div class="dictionary__column dictionary__column_inactive">
+				<div class="word">
+					<div class="word__text">
+						<span> ا  (أَلِفٌ)</span>
+						<a href="#!" class="word__transcription">Транскрипция</a>
+					</div>
+					<div class="word__descr">
+						<span>Алиф; (первая буква арабского алфавита; служит знаком долготы для фатхи или является носителем хамзы; (цифровое значение 1)</span>
+					</div>
+					<div class="word__actions">
+						<a href="#!">Редактировать</a>
+						<a href="#!">Правки ( 1 )</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dictionary__row">
+			<div class="dictionary__column">
+				<div class="word">
+					<div class="word__text">
+						<span>вопр. част.  أَ</span>
+						<a href="#!" class="word__transcription">Транскрипция</a>
+					</div>
+					<div class="word__descr">
+						<span>ли  1<br>
+		ا...ام (в двойном вопросе) или...или;  1<br>
+		او неужели, разве;  6<br>
+		(الا وهو (هى а именно;</span>
+					</div>
+					<div class="word__actions">
+						<a href="#!">Редактировать</a>
+						<a href="#!">Правки ( 1 )</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#" class="result__download">Загрузка</a>
+		
+		
+		
+	</div>
+</section>
+<div class="popup" id="popup__add">
+	<div class="popup__wrapper">
+		<script>
+			var test = [{word: 'Овал', translate: '(أَلِفٌ)'},{word: 'Отец', translate: 'أَبَازِنُ'}, {word: 'Отель', translate: 'أَلِفٌ'}, {word: 'Отек', translate: '(أَلِ'}];
+		</script>
+		<div class="popup__close"><i class="icon-close"></i></div>
+		<span class="popup__title">+ Добавление статьи</span>
+		<span class="popup__subtitle">Оригинал</span>
+		<div class="popup__row">
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="text" id="input1" class="input" placeholder="введите ваш текст">
+					<label class="input__label" id="label1">Слово</label>
+				</div>
+			</div>
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="text" id="input2" class="input" placeholder="введите ваш текст">
+					<label class="input__label" id="label2">Перевод</label>
+				</div>
+				<a href="#!" class="popup__more">+ добавить еще вариант перевода</a>
+			</div>
+		</div>
+		<div class="popup__row popup__row_full">
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="text" id="input3" class="input" placeholder="введите ваш текст">
+					<label class="input__label" id="label3">Пример</label>
+				</div>
+				<a href="#!" class="popup__more">+ добавить еще один пример</a>
+			</div>			
+		</div>
+		<div class="popup__row">
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="text" id="input4" class="input" placeholder="введите ваш текст">
+					<label class="input__label" id="label4">Тематика</label>
+				</div>
+				<a href="#!" class="popup__more">+ добавить тематику</a>
+			</div>	
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="text" id="input5" class="input" placeholder="введите ваш текст">
+					<label class="input__label" id="label5">Синонимы</label>
+				</div>
+				<a href="#!" class="popup__more">+ добавить синоним</a>
+			</div>			
+		</div>
+
+
+		<div class="popup__row">
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="text" id="input6" class="input" placeholder="введите ваш текст">
+					<label class="input__label" id="label6">Корень</label>
+				</div>
+				<a href="#!" class="popup__more">+ изменить корень</a>
+			</div>			
+		</div>
+
+		<button class="button button__small">Сохранить</button>
+		
+	</div>
+</div>
+
+<div class="popup" id="popup__login">
+	<div class="popup__wrapper popup__wrapper_login">
+		<div class="popup__close"><i class="icon-close"></i></div>
+		<span class="popup__title">Вход в личный кабинет</span>
+		<span class="popup__subtitle">Логин</span>
+		<div class="popup__row">
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="text" id="input7" class="input" placeholder="введите ваш логин">
+					<label class="input__label" id="label7">Логин</label>
+				</div>
+			</div>
+			<div class="popup__column">
+				<div class="input-wrapper">
+					<input type="password" id="input8" class="input" placeholder="введите ваш пароль">
+					<label class="input__label" id="label8">Пароль</label>
+				</div>
+			</div>
+		</div>
+		
+
+		<button class="button button__small">Войти</button>
+		
+	</div>
+</div>
+<footer class="footer page">
+	<div class="footer__wrapper page-wrapper">
+		<span>© 2018</span>
+	</div>
+</footer>
+
+
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+var test = [{word: 'Овал', translate: '(أَلِفٌ)'},{word: 'Отец', translate: 'أَبَازِنُ'}, {word: 'Отель', translate: 'أَلِفٌ'}, {word: 'Отек', translate: '(أَلِ'}];
+autocomplete(document.getElementById("input1"), test);
+autocomplete(document.getElementById("input2"), test);
+autocomplete(document.getElementById("input3"), test);
+autocomplete(document.getElementById("input4"), test);
+autocomplete(document.getElementById("input5"), test);
+autocomplete(document.getElementById("input6"), test);
+autocomplete(document.getElementById("input7"));
+autocomplete(document.getElementById("input8"));	
+</script>
+
+</body>
+</html>
