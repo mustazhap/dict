@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+	<title>Arabic Dictionary</title>
+
+</head>
+<body>
+	
+@@include("blocks/header/header.html")
+@@include("blocks/dictionary/dictionary.html")
+@@include("blocks/popup/popup.html")
+@@include("blocks/footer/footer.html")
+
+
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+var test = [{word: 'Овал', translate: '(أَلِفٌ)'},{word: 'Отец', translate: 'أَبَازِنُ'}, {word: 'Отель', translate: 'أَلِفٌ'}, {word: 'Отек', translate: '(أَلِ'}];
+autocomplete(document.getElementById("input1"), test);
+autocomplete(document.getElementById("input2"), test);
+autocomplete(document.getElementById("input3"), test);
+autocomplete(document.getElementById("input4"), test);
+autocomplete(document.getElementById("input5"), test);
+autocomplete(document.getElementById("input6"), test);
+autocomplete(document.getElementById("input7"));
+autocomplete(document.getElementById("input8"));	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+$UbuntuBold: 'Ubuntu-B', sans-serif;
+$UbuntuMedium: 'Ubuntu-M', sans-serif;
+$UbuntuRegular: 'Ubuntu-R', sans-serif;
+
+@font-face{
+	font-family: 'Ubuntu-B';
+	src: url('../../assets/fonts/Ubuntu-B.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Ubuntu-M';
+	src: url('../../assets/fonts/Ubuntu-M.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Ubuntu-R';
+	src: url('../../assets/fonts/Ubuntu-R.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../assets/fonts/icomoon/icomoon.eot?kbe21r');
+  src:  url('../../assets/fonts/icomoon/icomoon.eot?kbe21r#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/icomoon/icomoon.ttf?kbe21r') format('truetype'),
+    url('../../assets/fonts/icomoon/icomoon.woff?kbe21r') format('woff'),
+    url('../../assets/fonts/icomoon/icomoon.svg?kbe21r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lines-menu:before {
+  content: "\e905";
+}
+
+.icon-refresh-arrow:before {
+  content: "\e908";
+}
+.icon-search:before {
+  content: "\e906";
+}
+.icon-close:before {
+  content: "\e901";
+}
+.icon-edit:before {
+  content: "\e902";
+}
+.icon-share:before {
+  content: "\e903";
+}
+.icon-keyboard:before {
+  content: "\e904";
+}
+.icon-change:before {
+  content: "\e900";
+}

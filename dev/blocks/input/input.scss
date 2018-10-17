@@ -1,0 +1,59 @@
+.input{
+	border: none;
+  	border-bottom: 1px solid rgba($textColor, 0.5);
+	width: 100%;
+	font-size: 14px;
+	font-family: $UbuntuRegular;
+	color: black;
+	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.79;
+  	letter-spacing: normal;
+	transition: 0.5s;
+	
+  	&::placeholder{
+  		color: transparent;
+		font-family: $UbuntuMedium;
+		transition: 0.5s;
+  	}
+
+  	&:focus{
+  		outline: none;
+  		&::placeholder{
+  			color: rgba(#4a4a4a, 0.2);
+  		}
+  		border-bottom: 1px solid $greenyBlue;
+
+  	}
+	
+	&__label{
+		position: absolute;
+		font-size: 14px;
+		color: black;
+		font-style: normal;
+  		font-stretch: normal;
+  		line-height: 1.79;
+  		letter-spacing: normal;
+		font-family: $UbuntuMedium;
+		top: 0;
+		left: 0;
+		transition: ease .5s;
+		pointer-events: none;
+	}
+
+}
+
+.input:focus~.input__label{
+ 	opacity: 0;
+}
+
+
+.input-wrapper{
+	position: relative;
+}
+
+.input-new-wrapper{
+	transition: 1s;
+	position: relative;
+	opacity: 0;
+}

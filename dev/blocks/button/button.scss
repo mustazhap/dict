@@ -1,0 +1,51 @@
+.button{
+	  width: 171px;
+  	height: 38px;
+  	border: none;
+	  border-radius: 4px;
+  	background-color: $greenyBlue;
+  	color: white;
+  	cursor: pointer;
+  	font-size: 12px;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-stretch: normal;
+  	font-family: $UbuntuBold;
+  	line-height: 1.17;
+  	letter-spacing: normal;
+  	text-transform: uppercase;
+    
+    &_disabled{
+      background: $textColor;
+    }
+
+  	&__small{
+  		width: 145px;
+  		height: 46px;
+  		box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+  		font-size: 14px;
+  		line-height: 1.79;
+  		letter-spacing: 1.2px;
+  		position: absolute;
+  		bottom: -23px;
+  		left: 50%;
+  		transform: translate(-50%, 0);
+  	}
+
+    &_white{
+      color: $greenyBlue;
+      background: white;
+      height: 46px;
+      width: 276px;
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+      
+    }
+
+  	&:active{
+  		background: $darkBlue;
+  	}
+
+  	&:focus{
+  		outline: none;
+  	}
+}

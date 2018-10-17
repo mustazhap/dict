@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+	
+
+	<title>Arabic Dictionary</title>
+
+</head>
+<body>
+	
+@@include("blocks/header/header.html")
+@@include("blocks/search/search.html")
+@@include("blocks/result/result.html")
+@@include("blocks/popup/popup.html")
+@@include("blocks/footer/footer.html")
+
+
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/key.js" charset="UTF-8"></script>
+<script>
+var test = [{word: 'Овал', translate: '(أَلِفٌ)'},{word: 'Отец', translate: 'أَبَازِنُ'}, {word: 'Отель', translate: 'أَلِفٌ'}, {word: 'Отек', translate: '(أَلِ'}];
+autocomplete(document.getElementById("inputS"), test);
+autocomplete(document.getElementById("input1"), test);
+autocomplete(document.getElementById("input2"), test);
+autocomplete(document.getElementById("input3"), test);
+autocomplete(document.getElementById("input4"), test);
+autocomplete(document.getElementById("input5"), test);
+autocomplete(document.getElementById("input6"), test);
+autocomplete(document.getElementById("input7"));
+autocomplete(document.getElementById("input8"));	
+</script>
+
+</body>
+</html>

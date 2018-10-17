@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#keyboardInputInitiator {
+    cursor: pointer;
+}
+#container {
+    line-height: 1;
+    margin: 0;
+    text-align: left;
+    width: auto;
+    z-index: 100000 !important;
+}
+#container .helpDiv {
+    position: relative !important;
+}
+#container .left_top, #container .right_top, #container .left_bottom, #container .right_bottom {
+    height: 7px;
+    position: absolute;
+    width: 50%;
+}
+#container .left_top {
+    background: url("../img/keyboard/top_left.png") no-repeat scroll left 0 transparent;
+    top: -7px;
+}
+#container .right_top {
+    background: url("../img/keyboard/top_right.png") no-repeat scroll right 0 transparent;
+    right: 0;
+    top: -7px;
+}
+#container .left_center {
+    background: url("../img/keyboard/left_shadow.png") repeat-y scroll left top transparent;
+    left: 0;
+    top: 0;
+}
+
+#container .left_center, #container .right_center {
+    height: 100%;
+    position: absolute;
+    width: 8px;
+}
+
+#container .right_bottom {
+    background: url("../img/keyboard/bottom_right.png") no-repeat scroll right 0 transparent;
+    height: 11px;
+    right: 0;
+}
+#container .left_bottom {
+    background: url("../img/keyboard/bottom_left.png") no-repeat scroll left 0 transparent;
+    height: 11px;
+}
+#container .right_center {
+    background: url("../img/keyboard/right_shadow.png") repeat-y scroll left top transparent;
+    right: 0;
+    top: 0;
+}
+#keyboardInputMaster {
+    background: url("../img/keyboard/bg_for_vkeyboard.png") repeat-x scroll 0 100% #FFFFFF;
+    border-left: 1px solid #8A8A8A;
+    border-right: 1px solid #8A8A8A;
+    margin: 0 6px;
+    position: relative;
+}
+#keyboardInputMaster thead {
+    background: none repeat scroll 0 0 #DEE0E2;
+    cursor: move;
+}
+#keyboardInputMaster input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: inline-block;
+    outline: medium none;
+    overflow: visible;
+    padding: 2px 5px;
+}
+#keyboardInputMaster .Press {
+    background: url("../img/keyboard/bg_for_button.gif") repeat-x scroll left bottom #FFFFFF;
+}
+#keyboardInputMaster .Release {
+    background: none repeat scroll 0 0 transparent;
+}
+#keyboardInputMaster thead tr {
+    line-height: 2em;
+}
+#keyboardInputMaster thead tr th, #keyboardInputMaster thead tr td {
+    font-size: 12px;
+    padding: 1px 0;
+    white-space: nowrap;
+}
+#keyboardInputMaster thead tr th {
+    text-align: left;
+}
+#keyboardInputMaster thead tr td {
+    text-align: right;
+    vertical-align: middle;
+}
+#keyboardInputMaster thead tr th span {
+    font-weight: bold;
+    margin-right: 4%;
+    vertical-align: middle;
+}
+#keyboardInputMaster thead tr th select {
+    background-color: #F6F6F6;
+    border: 1px solid #888888;
+    margin: 0 3% 0 8px;
+}
+#keyboardInputMaster thead tr th label input {
+    height: 1.1em;
+    width: 1.1em;
+}
+#keyboardInputMaster thead tr td span {
+    background-color: #CCCCCC;
+    border-color: #E5E5E5 #5D5D5D #5D5D5D #E5E5E5;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 0 0 0 0.3em;
+    padding: 0 0.5em;
+}
+#keyboardInputMaster thead tr td strong {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.5em -2px 0;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+#keyboardInputMaster thead tr td strong img {
+    height: 17px;
+    vertical-align: baseline;
+    width: 18px;
+}
+#keyboardInputMaster tbody tr td {
+    padding: 0.5em 7px 7px;
+    text-align: left;
+}
+#keyboardInputMaster tbody tr td div {
+    height: 0;
+    text-align: center;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout {
+    background: none repeat scroll 0 0 transparent;
+    height: auto;
+}
+#keyboardInputMaster thead tr th div.inner_container {
+    display: inline-block;
+    height: auto;
+    margin-top: -2px;
+    padding: 0;
+}
+#keyboardInputMaster div.inner_container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #8A8A8A;
+    cursor: pointer;
+    height: 1.3em;
+    line-height: 1.3em;
+    padding: 0 0.5em;
+    position: relative;
+}
+#keyboardInputMaster div.inner_container .top_left, #keyboardInputMaster div.inner_container .top_right, #keyboardInputMaster div.inner_container .bottom_left, #keyboardInputMaster div.inner_container .bottom_right {
+    height: 2px;
+    position: absolute;
+    width: 2px;
+}
+#keyboardInputMaster div.inner_container .top_left {
+    background: url("../img/keyboard/left_top.gif") no-repeat scroll 0 0 transparent;
+    left: -1px;
+    top: -1px;
+}
+#keyboardInputMaster div.inner_container .top_right {
+    background: url("../img/keyboard/right_top.gif") no-repeat scroll 0 0 transparent;
+    right: -1px;
+    top: -1px;
+}
+#keyboardInputMaster div.inner_container .bottom_left {
+    background: url("../img/keyboard/left_bottom.gif") no-repeat scroll 0 0 transparent;
+    bottom: -1px;
+    left: -1px;
+}
+#keyboardInputMaster div.inner_container .bottom_right {
+    background: url("../img/keyboard/right_bottom.gif") no-repeat scroll 0 0 transparent;
+    bottom: -1px;
+    right: -1px;
+}
+div#keyboardInputLayout table {
+    border-collapse: separate;
+    border-spacing: 0;
+    white-space: nowrap;
+    width: 100%;
+}
+div#keyboardInputLayout table.keyboardInputCenter {
+    margin: 0 auto;
+    width: auto;
+}
+div#keyboardInputLayout table tbody tr td {
+    color: #000000;
+    font-family: 'Lucida Console',monospace;
+    font-size: 17px;
+    padding: 0 2px 2px 0;
+    vertical-align: middle;
+    white-space: pre;
+}
+div#keyboardInputLayout table tbody tr td.last {
+    width: 99%;
+}
+div#keyboardInputLayout table tbody tr td.Bksp {
+    font-family: Arial,Verdana,Sans-Serif;
+}
+div#keyboardInputLayout table tbody tr td.space div.inner_container {
+    padding: 0 4em;
+}
+div#keyboardInputLayout table tbody tr td.alive div.inner_container {
+    background-color: #CCCCDD;
+}
+div#keyboardInputLayout table tbody tr td.target div.inner_container {
+    background-color: #DDDDCC;
+}
+div#keyboardInputLayout table tbody tr td.hover div.inner_container {
+    background: url("../img/keyboard/bg_for_button2.gif") repeat-x scroll left bottom #FFFFFF;
+}
+div#keyboardInputLayout table tbody tr td.dead div.inner_container {
+    background: url("../img/keyboard/bg_for_button2.gif") repeat-x scroll left bottom #FFFFFF;
+}
+div#keyboardInputLayout table tbody tr td.Diacr div.inner_container {
+    background: none repeat scroll 0 0 #FFF6B7;
+    border: 1px solid #B09066;
+}
+div#keyboardInputLayout table tbody tr td.Diacr.hover div.inner_container, div#keyboardInputLayout table tbody tr td.Diacr.dead div.inner_container {
+    background: none repeat scroll 0 0 #D0F4FE;
+}
+div#keyboardInputLayout table tbody tr td span {
+    display: block;
+    font-size: 0.6em;
+    text-align: center;
+    white-space: pre;
+}
+#keyboardInputMaster tbody tr td div var {
+    bottom: 0;
+    color: #444444;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+.nojs #keyboardInputInitiator {
+    display: none;
+}

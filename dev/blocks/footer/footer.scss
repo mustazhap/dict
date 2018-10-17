@@ -1,0 +1,18 @@
+.footer{
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 0;
+
+    span{
+      font-family: $UbuntuRegular;
+      font-size: 14px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: $textColor;
+    }
+  }
+}

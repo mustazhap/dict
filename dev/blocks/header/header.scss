@@ -1,0 +1,151 @@
+.header{
+	height: 76px;
+  	box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+
+	&__wrapper{
+		display: flex;
+		padding: 19px 0;
+		justify-content: space-between;
+	}
+
+	&__part{
+		display: flex;
+	}
+
+	&__logo{
+		display: flex;	
+		text-decoration: none;
+		align-items: center;
+
+		&-text{
+			font-size: 32px;
+			line-height: 17px;
+			letter-spacing: 3px;
+			color: $greenyBlue;
+			text-transform: uppercase;
+			font-family: $UbuntuBold;
+		}	
+
+		&-title{
+			color: $textColor;
+			font-size: 10px;
+			line-height: 14px;
+			font-family: $UbuntuBold;
+			text-transform: uppercase;
+		}
+	}
+
+	&__nav{
+		width: 379px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		a{
+			font-size: 12px;
+			font-family: $UbuntuMedium;
+			line-height: 1.17;
+			color: $textColor;
+			text-transform: uppercase;
+			text-decoration: none;
+
+			&:hover{
+				color: $greenyBlue;
+			}
+		}
+	}
+
+	&__control{
+		margin-left: 96px;
+
+		&-link{
+			font-family: $UbuntuBold;
+			font-size: 12px;
+  			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.17;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: normal;
+			color: $greenyBlue;
+			margin-right: 22px;
+
+			&:hover{
+				color: $darkBlue;
+			}
+		}
+	}
+
+	.icon-lines-menu{
+		color: $greenyBlue;
+		font-size: 31px;
+		&:hover{
+			color: $darkBlue;
+		}
+	}
+
+	&__menu{
+		background: $greenyBlue;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		right: -576px;
+		height: calc(100vh - 76px);
+		z-index: 9;
+		display: flex;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 24px 0 24px;
+		box-sizing: border-box;
+		justify-content: space-between;
+		transition: 0.5s;
+  		box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+
+
+		&-button{
+			text-decoration: none;
+			display: flex;
+			display: none;
+			align-items: center;
+		}
+
+		&-nav{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+
+			a{
+				font-family: $UbuntuMedium;
+				font-size: 18px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 2.89;
+				letter-spacing: normal;
+				color: #ffffff;
+			}
+
+		}
+
+		&-control{
+			display: flex;
+			flex-direction: column;
+      		width: 100%;
+
+			align-items: center;
+			
+			&-link{
+			  font-family: $UbuntuMedium;
+			  font-size: 14px;
+			  text-decoration: none;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: 3.71;
+			  letter-spacing: normal;
+			  color: #ffffff;
+			}
+		}
+	}
+}

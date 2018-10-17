@@ -1,0 +1,66 @@
+.dictionary-top{
+	height: 96px;
+	background: url("../img/bg.jpg") no-repeat;
+  	background-size: cover;
+  	background-position:  center 0;
+
+	&__wrapper{
+		display: flex;
+		align-items: center;
+		position: relative;
+		justify-content: center;
+	}
+
+	&__title{
+		font-family: $UbuntuBold;
+  		font-size: 38px;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: 1.11;
+  		letter-spacing: normal;
+  		color: #ffffff;
+	}
+
+	&__category{
+		font-family: $UbuntuRegular;
+  		font-size: 14px;
+  		font-style: normal;
+  		font-stretch: normal;
+  		line-height: 1.79;
+  		letter-spacing: normal;
+  		color: #ffffff;
+  		position: absolute;
+  		right: 0;
+  		text-decoration: none;
+	}
+}
+
+.dictionary{
+	&__wrapper{
+		display: flex;
+		flex-direction: column;
+		padding-top: 36px;
+		align-items: center;
+	}
+
+	&__row{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 7px;
+	}
+
+	&__column{
+		max-width: 550px;
+		width: 100%;
+
+		&_inactive{
+			position: relative;
+			opacity: 0.4;
+			span{
+				color: #4a4a4a !important;
+			}
+			
+		}
+	}
+}
