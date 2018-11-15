@@ -1,5 +1,7 @@
 # Фронтенд для Русско-арабского онлайн словаря
+
 ![alt text](https://github.com/mustazhap/dict/blob/master/dict-template.png)
+
 // HTML5 + CSS3 by SCSS + JQUERY (Подсказки для поисковика)
 ]:=> **Задача:** 
 
