@@ -2,7 +2,12 @@
 
 ![alt text](https://github.com/mustazhap/dict/blob/master/site-templ.png)
 
-> HTML5 + CSS3 by SCSS + JQUERY (Подсказки для поисковика)  
+> 
+Адаптивно во всех устройствах,  
+кроссбраузерно  
+[кроме IE]  
+использовал технологии Flexbox + CSS Grid, CSS3, JS, HTML5, SCSS, Gulp, Zeplin  
+Подсказка слов для поисковика 
 [Посмотреть сайт](https://mustazhap.h1n.ru/dict)
 
 #ПК (Страница: Все слова)  
