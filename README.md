@@ -2,13 +2,16 @@
 
 ![alt text](https://github.com/mustazhap/dict/blob/master/site-templ.png)
 
-// HTML5 + CSS3 by SCSS + JQUERY (Подсказки для поисковика)
-]:=> **Задача:** 
+> HTML5 + CSS3 by SCSS + JQUERY (Подсказки для поисковика)
+[Посмотреть сайт](https://mustazhap.h1n.ru/dict)
 
-#Main Page
-![alt text](https://github.com/mustazhap/web.sdu/blob/master/screenshot-web.sdu-2018-01-18-05-03-28-256.png)
+#ПК (Страница: Все слова)
+![alt text](https://github.com/mustazhap/web.sdu/blob/master/site-desktop.png)
 
-#Page of Device
-![alt text](https://github.com/mustazhap/web.sdu/blob/master/page-of-device.png)
+#Mobile
+![alt text](https://github.com/mustazhap/web.sdu/blob/master/site-mob.png)
+
+#Отзыв от заказчика [Посмотреть](https://freelansim.ru/freelancers/mustazhap/opinions)
+![alt text](https://github.com/mustazhap/web.sdu/blob/master/site-feedback.png)
 
 
