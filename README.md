@@ -5,13 +5,13 @@
 > HTML5 + CSS3 by SCSS + JQUERY (Подсказки для поисковика)  
 [Посмотреть сайт](https://mustazhap.h1n.ru/dict)
 
-#ПК (Страница: Все слова)
+#ПК (Страница: Все слова)  
 ![alt text](https://github.com/mustazhap/dict/blob/master/site-desktop.png)
 
-#Mobile
+#Mobile  
 ![alt text](https://github.com/mustazhap/dict/blob/master/site-mob.png)
 
-#Отзыв от заказчика [Посмотреть](https://freelansim.ru/freelancers/mustazhap/opinions)
-![alt text](https://github.com/mustazhap/dict/blob/master/site-feedback.png)
+#Отзыв от заказчика [Посмотреть](https://freelansim.ru/freelancers/mustazhap/opinions)  
+![alt text](https://github.com/mustazhap/dict/blob/master/dict-feedback.png)
 
 
